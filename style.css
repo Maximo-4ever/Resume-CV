@@ -10,14 +10,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px;
 }
+/* #area-cv {
+  margin: 20px;
+} */
 .container {
   position: relative;
   width: 100%;
-  max-width: 1070px;
+  max-width: 1065px;
   min-height: 1000px;
   background-color: #fff;
-  margin: 50px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   box-shadow: 0px 4.4px 6.3px rgba(0, 0, 0, 0.035),
@@ -38,6 +41,16 @@ body {
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 252, 0.2);
 }
+.btnDownload {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.btnDownload img {
+  width: 20.5px;
+  height: 20.5px;
+}
 .profileText__imgBx {
   position: relative;
   width: 200px;
@@ -52,6 +65,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  user-select: none;
 }
 .profileText h2 {
   color: #fff;
@@ -88,19 +102,22 @@ body {
   cursor: pointer;
 }
 .contactInfo__icon {
-  display: inline-block;
+  display: inline-flex;
   width: 30px;
-  font-size: 18px;
-  color: #03a9f4;
+  vertical-align: middle;
+}
+.contactInfo__icon img {
+  width: 18.5px;
 }
 .contactInfo__text {
   color: #fff;
   font-weight: 300;
+  text-decoration: none;
 }
 
 /* Educacion  */
 .education li {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .education h5 {
   color: #03a9f4;
@@ -131,7 +148,6 @@ body {
   height: 100%;
   background-color: #03a9f4;
 }
-
 
 #right_side {
   position: relative;
@@ -186,7 +202,6 @@ p {
   text-transform: uppercase;
   color: #848c99;
   font-weight: 500;
-
 }
 .skills .box div {
   position: relative;
@@ -220,15 +235,18 @@ p {
   color: #333;
   margin: 10px 0;
 }
-.interest svg {
+.interest img {
+  display: inline-flex;
+  width: 19px;
   margin-right: 7px;
-  color: #03a9f4;
-  font-size: 18px;
+  vertical-align: middle;
 }
 
 @media (max-width: 1182px) {
+  body {
+    padding: 0;
+  }
   .container {
-    margin: 10px;
     grid-template-columns: repeat(1, 1fr);
   }
   .interest ul {
@@ -247,6 +265,6 @@ p {
     grid-template-columns: repeat(1, 1fr);
   }
   .skills .box {
-    grid-template-columns: repeat(1, 1fr)
+    grid-template-columns: repeat(1, 1fr);
   }
 }

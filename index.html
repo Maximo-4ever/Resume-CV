@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maximo 4ever - CV</title>
     <meta name="description" content="Maximo 4ever Desarrollador Frontend && Designer - CV">
-    <meta name="keywords" content="Maximo 4ever,portafolio,CV,desarrollador web,desarrollador frontend,diseño,diseñador web,ux ui,freelance,freelancer">
+    <meta name="keywords" content="Maximo 4ever,portafolio,CV,desarrollador web,desarrollador frontend,diseño,diseñador web,ux ui,freelance,freelancer,Curriculum vitae">
     <meta name="author" content="Eduardo maximiliano">
     <link rel="icon" href="Logo.jpg">
     <link rel="stylesheet" href="style.css" />
@@ -16,203 +16,205 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./html2pdf.bundle.min.js" ></script>
   </head>
   <body>
-    <main class="container">
-      <div id="left_side">
-        <header class="profileText">
-          <div class="profileText__imgBx">
-            <img src="Logo.jpg" alt="Maximo 4ever" />
+    <div id="area-cv">
+      <main class="container">
+        <div id="left_side">
+          <header class="profileText">
+            <span class="btnDownload">
+              <img src="./images/download-solid.svg" alt="">
+            </span>
+            <div class="profileText__imgBx">
+              <img src="Logo.jpg" alt="Maximo 4ever" />
+            </div>
+            <h2>Maximo 4ever <span>Fronted Developer</span></h2>
+          </header>
+          <div class="contactInfo">
+            <h3 class="contactInfo__title">Contact Info</h3>
+            <ul>
+              <!-- <li>
+                <span class="contactInfo__icon"
+                  ><i class="fas fa-phone-alt"></i
+                ></span>
+                <span class="contactInfo__text" style="text-decoration:line-through;">+52 010 0111 011</span>
+              </li> -->
+              <li>
+                <span class="contactInfo__icon">
+                  <img src="./images/envelope-regular.png" alt="">
+                </span>
+                <a target="_blank" class="contactInfo__text" href="mailto:Maximilianocm06@gmail.com">Maximilianocm06@gmail.com</a>
+              </li>
+              <li>
+                <span class="contactInfo__icon">
+                  <img src="./images/globe-americas-solid.png" alt="">
+                </span>
+                <a target="_blank" href="https://Maximo-4ever.github.io" class="contactInfo__text">Maximo-4ever.github.io</a>
+              </li>
+              <li>
+                <span class="contactInfo__icon">
+                  <img src="./images/github-brands.png" alt="">
+                </span>
+                <a target="_blank" href="https://Github.com/Maximo-4ever" class="contactInfo__text">Github.com/Maximo-4ever</a>
+              </li>
+              <li>
+                <span class="contactInfo__icon">
+                  <img src="./images/map-marker-alt-solid.png" alt="">
+                </span>
+                <span class="contactInfo__text">Acapulco, Guerrero, Mexico</span>
+              </li>
+            </ul>
           </div>
-          <h2>Maximo 4ever <span>Fronted Developer</span></h2>
-        </header>
-        <div class="contactInfo">
-          <h3 class="contactInfo__title">Contact Info</h3>
-          <ul>
-            <li>
-              <span class="contactInfo__icon"
-                ><i class="fas fa-phone-alt"></i
-              ></span>
-              <span class="contactInfo__text">+52 366 3245 542</span>
-            </li>
-            <li>
-              <span class="contactInfo__icon"
-                ><i class="far fa-envelope"></i
-              ></span>
-              <span class="contactInfo__text">Maximilianocm06@gmail.com</span>
-            </li>
-            <li>
-              <span class="contactInfo__icon"
-                ><i class="fas fa-globe-americas"></i
-              ></span>
-              <span class="contactInfo__text">Maximo-4ever.github.io</span>
-            </li>
-            <li>
-              <span class="contactInfo__icon"
-                ><i class="fab fa-github"></i
-              ></span>
-              <span class="contactInfo__text">Github.com/Maximo-4ever</span>
-            </li>
-            <li>
-              <span class="contactInfo__icon"
-                ><i class="fas fa-map-marker-alt"></i
-              ></span>
-              <span class="contactInfo__text">Acapulco, Guerrero, Mexico</span>
-            </li>
-          </ul>
+          <div class="contactInfo education">
+            <h3 class="contactInfo__title">Education</h3>
+            <ul>
+              <li>
+                <h5>2010 - 2013</h5>
+                <h4>Master Degree in computer Science</h4>
+                <h4>University Name</h4>
+              </li>
+              <li>
+                <h5>2007 - 2010</h5>
+                <h4>Bachelor Degree in computer Science</h4>
+                <h4>University Name</h4>
+              </li>
+              <li>
+                <h5>1997 - 2007</h5>
+                <h4>Matriculation</h4>
+                <h4>University Name</h4>
+              </li>
+            </ul>
+          </div>
+          <div class="contactInfo language">
+            <h3 class="contactInfo__title">Idiomas</h3>
+            <ul>
+              <li>
+                <span class="contactInfo__text">Español</span>
+                <span class="percent">
+                  <div style="width: 90%"></div>
+                </span>
+              </li>
+              <li>
+                <span class="contactInfo__text">Ingles</span>
+                <span class="percent">
+                  <div style="width: 64%"></div>
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="contactInfo education">
-          <h3 class="contactInfo__title">Education</h3>
-          <ul>
-            <li>
-              <h5>2010 - 2013</h5>
-              <h4>Master Degree in computer Science</h4>
-              <h4>University Name</h4>
-            </li>
-            <li>
-              <h5>2007 - 2010</h5>
-              <h4>Bachelor Degree in computer Science</h4>
-              <h4>University Name</h4>
-            </li>
-            <li>
-              <h5>1997 - 2007</h5>
-              <h4>Matriculation</h4>
-              <h4>University Name</h4>
-            </li>
-          </ul>
-        </div>
-        <div class="contactInfo language">
-          <h3 class="contactInfo__title">Idiomas</h3>
-          <ul>
-            <li>
-              <span class="contactInfo__text">Español</span>
-              <span class="percent">
-                <div style="width: 90%"></div>
-              </span>
-            </li>
-            <li>
-              <span class="contactInfo__text">Ingles</span>
-              <span class="percent">
-                <div style="width: 64%"></div>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
       
-      <div id="right_side">
-        <article class="about">
-          <h2 class="about__title">Perfil</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum at
-            molestiae eligendi rem nulla natus aspernatur deleniti voluptatibus
-            quisquam cumque veniam, asperiores debitis ipsa autem modi dolore?
-            Doloribus, laborum in?
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-            aspernatur laudantium beatae tempore laborum. Eos earum voluptate,
-            perspiciatis ipsum maiores laboriosam! Repudiandae, cum ipsa
-            cupiditate commodi earum voluptatibus necessitatibus ea?
-          </p>
-        </article>
-        <article class="about">
-          <h2 class="about__title">Experiencia</h2>
-          <div class="box">
-            <div class="year_company">
-              <h5>2019 - Present</h5>
-              <h5>Company Name</h5>
+        <div id="right_side">
+          <article class="about">
+            <h2 class="about__title">Perfil</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum at
+              molestiae eligendi rem nulla natus aspernatur deleniti voluptatibus
+              quisquam cumque veniam, asperiores debitis ipsa autem modi dolore?
+              Doloribus, laborum in?
+              <br />
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              aspernatur laudantium beatae tempore laborum. Eos earum voluptate,
+              perspiciatis ipsum maiores laboriosam! Repudiandae, cum ipsa
+              cupiditate commodi earum voluptatibus necessitatibus ea?
+            </p>
+          </article>
+          <article class="about">
+            <h2 class="about__title">Experiencia</h2>
+            <div class="box">
+              <div class="year_company">
+                <h5>2019 - Present</h5>
+                <h5>Company Name</h5>
+              </div>
+              <div class="text">
+                <h4>Senior UX Designer</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed,
+                  sapiente. Laudantium impedit blanditiis ab reiciendis tenetur.
+                </p>
+              </div>
             </div>
-            <div class="text">
-              <h4>Senior UX Designer</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed,
-                sapiente. Laudantium impedit blanditiis ab reiciendis tenetur.
-              </p>
+            <div class="box">
+              <div class="year_company">
+                <h5>2016 - 2019</h5>
+                <h5>Company Name</h5>
+              </div>
+              <div class="text">
+                <h4>UX/UI Designer</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed,
+                  sapiente. Laudantium impedit blanditiis ab reiciendis tenetur.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="box">
-            <div class="year_company">
-              <h5>2016 - 2019</h5>
-              <h5>Company Name</h5>
+            <div class="box">
+              <div class="year_company">
+                <h5>2014 - 2016</h5>
+                <h5>Company Name</h5>
+              </div>
+              <div class="text">
+                <h4>Junior UX Designer</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed,
+                  sapiente. Laudantium impedit blanditiis ab reiciendis tenetur.
+                </p>
+              </div>
             </div>
-            <div class="text">
-              <h4>UX/UI Designer</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed,
-                sapiente. Laudantium impedit blanditiis ab reiciendis tenetur.
-              </p>
+          </article>
+          <article class="about skills">
+            <h2 class="about__title">Habilidades Profesionales</h2>
+            <div class="box">
+              <h4>HTML</h4>
+              <div class="percent">
+                <div style="width: 95%"></div>
+              </div>
             </div>
-          </div>
-          <div class="box">
-            <div class="year_company">
-              <h5>2014 - 2016</h5>
-              <h5>Company Name</h5>
+            <div class="box">
+              <h4>CSS</h4>
+              <div class="percent">
+                <div style="width: 90%"></div>
+              </div>
             </div>
-            <div class="text">
-              <h4>Junior UX Designer</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed,
-                sapiente. Laudantium impedit blanditiis ab reiciendis tenetur.
-              </p>
+            <div class="box">
+              <h4>JavaScript</h4>
+              <div class="percent">
+                <div style="width: 82%"></div>
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="about skills">
-          <h2 class="about__title">Habilidades Profesionales</h2>
-          <div class="box">
-            <h4>HTML</h4>
-            <div class="percent">
-              <div style="width: 95%"></div>
+            <div class="box">
+              <h4>React</h4>
+              <div class="percent">
+                <div style="width: 75%"></div>
+              </div>
             </div>
-          </div>
-          <div class="box">
-            <h4>CSS</h4>
-            <div class="percent">
-              <div style="width: 90%"></div>
+            <div class="box">
+              <h4>Vue</h4>
+              <div class="percent">
+                <div style="width: 84%"></div>
+              </div>
             </div>
-          </div>
-          <div class="box">
-            <h4>JavaScript</h4>
-            <div class="percent">
-              <div style="width: 82%"></div>
+            <div class="box">
+              <h4>Python</h4>
+              <div class="percent">
+                <div style="width: 87%"></div>
+              </div>
             </div>
-          </div>
-          <div class="box">
-            <h4>React</h4>
-            <div class="percent">
-              <div style="width: 75%"></div>
-            </div>
-          </div>
-          <div class="box">
-            <h4>Vue</h4>
-            <div class="percent">
-              <div style="width: 84%"></div>
-            </div>
-          </div>
-          <div class="box">
-            <h4>Python</h4>
-            <div class="percent">
-              <div style="width: 87%"></div>
-            </div>
-          </div>
-        </article>
-        <article class="about interest">
-          <h2 class="about__title">Interest</h2>
-          <ul>
-            <li><i class="fas fa-gamepad"></i> Jugar</li>
-            <li><i class="fas fa-code"></i> Programar</li>
-            <li><i class="fas fa-pencil-ruler"></i> Diseñar</li>
-            <li><i class="fas fa-glasses"></i> Leer</li>
-          </ul>
-        </article>
-      </div>
-    </main>
+          </article>
+          <article class="about interest">
+            <h2 class="about__title">Interest</h2>
+            <ul>
+              <li><img src="./images/gamepad-solid.png" alt=""> Jugar</li>
+              <li><img src="./images/code-solid.png" alt=""> Programar</li>
+              <li><img src="./images/pencil-ruler-solid.png" alt=""> Diseñar</li>
+              <li><img src="./images/glasses-solid.png" alt=""> Leer</li>
+            </ul>
+          </article>
+        </div>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
