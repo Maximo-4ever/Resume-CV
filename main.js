@@ -2,7 +2,7 @@ const areaCv = document.getElementById("area-cv");
 const btnDownload = document.querySelector(".btnDownload");
 const opt = {
   margin: 0,
-  filename: "Maximo 4ever - CV.pdf",
+  filename: "Eduardo Maximiliano - CV.pdf",
   image: { type: "jpeg", quality: 1 },
   enableLinks: true,
   html2canvas: { scale: 3 },
